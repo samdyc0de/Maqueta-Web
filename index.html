@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="prefifree.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Mi Web</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo ">
+        <img src="imagenes/logo.png" width="150" alt="logo" />
+      </div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <section class="main">
+      <img name="slider" class="slider" width="100%" height="400" />
+
+      <script>
+        window.addEventListener("load", function() {
+          let imagenes = [];
+          imagenes[0] = "imagenes/fondo.jpg";
+          imagenes[1] = "imagenes/slider1.jpg";
+          imagenes[2] = "imagenes/slider2.jpg";
+          imagenes[3] = "imagenes/slider3.jpg";
+          var indice = 0;
+          var time = 2000;
+          function cambiar() {
+            document.slider.src = imagenes[indice];
+
+            if (indice < 3) {
+              indice++;
+            } else {
+              indice = 0;
+            }
+          }
+          setInterval(cambiar, time);
+        });
+      </script>
+    </section>
+
+    <div class="centrado">
+      <h1>
+        Esta es una maqueta web profesional que aplica para todo tipo de sitio
+      </h1>
+    </div>
+    <div class="parrafos">
+      <div class="parrafo">
+        <h3>Parrafo 1</h3>
+
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
+          eos modi error recusandae facere maxime vel quam, ipsa reprehenderit
+          aut corporis ad impedit amet dolorem praesentium fuga placeat
+          consectetur magni, Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Soluta aliquam doloremque consectetur possimus, nostrum commodi
+          esse tenetur ad earum placeat distinctio porro, voluptates corrupti
+          hic quod qui perspiciatis necessitatibus nihil. Lorem ipsum, dolor sit
+          amet consectetur adipisicing elit. Accusamus eos modi error recusandae
+          facere maxime vel quam, ipsa reprehenderit aut corporis ad impedit
+          amet dolorem praesentium fuga placeat consectetur magni, Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Soluta aliquam doloremque
+          consectetur possimus, nostrum commodi esse tenetur ad earum placeat
+          distinctio porro, voluptates corrupti hic quod qui perspiciatis
+          necessitatibus nihil.
+        </p>
+      </div>
+      <div class="parrafo">
+        <h3>Parrafo 2</h3>
+
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
+          eos modi error recusandae facere maxime vel quam, ipsa reprehenderit
+          aut corporis ad impedit amet dolorem praesentium fuga placeat
+          consectetur magni, Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Soluta aliquam doloremque consectetur possimus, nostrum commodi
+          esse tenetur ad earum placeat distinctio porro, voluptates corrupti
+          hic quod qui perspiciatis necessitatibus nihil. Lorem ipsum, dolor sit
+          amet consectetur adipisicing elit. Accusamus eos modi error recusandae
+          facere maxime vel quam, ipsa reprehenderit aut corporis ad impedit
+          amet dolorem praesentium fuga placeat consectetur magni, Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Soluta aliquam doloremque
+          consectetur possimus, nostrum commodi esse tenetur ad earum placeat
+          distinctio porro, voluptates corrupti hic quod qui perspiciatis
+          necessitatibus nihil.
+        </p>
+      </div>
+    </div>
+    <footer>
+      <p>Mi sitio web.com.co</p>
+      <div>Copyright 2020 - todos los derechos reservados</div>
+      <a href="#">
+        <img src="imagenes/f2.png" alt="icon" />
+      </a>
+
+      <a href="#">
+        <img src="imagenes/f.png" alt="icon" />
+      </a>
+    </footer>
+  </body>
+</html>
